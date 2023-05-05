@@ -1,4 +1,6 @@
-<div align=center><h1>Quito Housing Price Predictor</h1></div>
+<div align=center  >
+    <img width=70% height=250 src='./banner.png'>
+</div>
 
 <h2>1.- Introduction</h2>
 
@@ -8,11 +10,11 @@ Let's suppose that a person wants to buy or sell a house, many times this person
 
 Create a house price predictor that helps sellers, buyers or investors know the estimated value of a property and helps these people or companies make better decisions when doing any of the aforementioned operations.
 
-<h3>3.- Data</h3>
+<h2>3.- Data</h2>
 
 The information used for this project was obtained from the plusvalia.com page using web scraping techniques with Python and the BeautifulSoup library, with which it was possible to obtain more than 7000 records that with the respective data cleaning using Pandas a little more than 4900 records were used.
 
-<h2>Data Description</h2>
+<h3>Data Description</h3>
 <table>
     <thead>
         <tr>
@@ -137,5 +139,34 @@ Over time, the ideal would be to increase the amount of data and retrain the mod
 You have two way of reproducing the web apllication.
 
 1. Downloan the github repository:
-   * Clone the github repository, write in a terminal `git clone https://github.com/erikintech/uio_realstate_prediciton.git`
-   * Install 
+   * Clone the github repository in folder, write in a terminal `git clone https://github.com/erikintech/uio_realstate_prediciton.git`
+   * Open the repository folder, *uio_realstate_prediction* folder 
+   * Open a terminal or bash in this folder
+   * Create a virtual enviroment: `python -m virtualenv venv` and active the virtualenv
+   * Install all dependencies: `pip install -r requirements`
+   * Run the command `python app.py` and in a web browser access to the http://localhost:5000 to use the application.
+
+2. Downloa the docker image
+   * You should have installed docker in your computer
+   * In a terminal run the next commmand: `docker run -it -d -p 5000:5000 --name <write a name for the container> erikintech/uio_realstate_pred`
+   * Check if the container in running: `docker ps`, if you see something similar to the image below
+
+   <div align=center><img width=550 heght=550 src='./container.png'/></div>
+
+   you can try in a web browser the application,  only write the web address `localhost:5000`
+
+<div align=center><img width=850 heght=850 src='./screenshot.png'/></div>
+
+<h3> <strong>Contact Me</strong> </h3>
+
+<a style="text-decoration:none; color:black" href= 'https://www.instagram.com/erikintech/' target=_blank>
+<img width=20 height=20 src='./icons/instagram.png'>
+</a>
+
+<a href= 'https://www.linkedin.com/in/erikqtrs/' target=_blank>
+<img width=20 height=20 src='./icons/linkedin.png'>
+</a>
+
+<a href= 'mailto:erikintech@proton.me"' target=_blank>
+<img width=20 height=20 src='./icons/email.png'>
+</a>
